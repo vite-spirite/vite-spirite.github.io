@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>meUser</title>
+    <title>notification</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -150,7 +150,7 @@
                 messagePaginate
             </a>
         </li>
-        <li class="slds-is-active" title="meUser">
+        <li  title="meUser">
             <a href="meuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 meUser
             </a>
@@ -160,7 +160,7 @@
                 minUser
             </a>
         </li>
-        <li  title="notification">
+        <li class="slds-is-active" title="notification">
             <a href="notification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 notification
             </a>
@@ -281,7 +281,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">meUser</h1>
+        <h1 class="slds-text-heading--large">notification</h1>
         <div class="slds-text-body--regular"></div>
     </div>
 </section>
@@ -293,7 +293,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">meUser</span> {</li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">pseudo</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">dateOfBirth</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">avatar</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">wallpaper</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">validateEmail</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   disabled if not activated</span></span></li><li><span class="tab"><span class="meta">twofa</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">discussions</span>: [<a class="support type" href="discussion.doc.html">discussion</a>] </span></li><li></li><li><span class="tab"><span class="meta">follows</span>: [<a class="support type" href="follower.doc.html">follower</a>] </span></li><li></li><li><span class="tab"><span class="meta">followers</span>: [<a class="support type" href="follower.doc.html">follower</a>] </span></li><li></li><li><span class="tab"><span class="meta">country</span>: <a class="support type" href="country.doc.html">country</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">notification</span> {</li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">lang</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">text</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">link</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">isClick</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -304,7 +304,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="authpayload.doc.html" title="AuthPayload - ">AuthPayload<em>null</em></a><li><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="notificationpagination.doc.html" title="notificationPagination - ">notificationPagination<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
